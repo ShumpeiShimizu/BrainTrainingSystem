@@ -2,6 +2,7 @@ package com.oklb.braintrainingsystem
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.oklb.braintrainingsystem.fragments.BrainTrainingFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -9,5 +10,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.mainFragmentArea, BrainTrainingFragment())
+            commit()
+        }
     }
 }

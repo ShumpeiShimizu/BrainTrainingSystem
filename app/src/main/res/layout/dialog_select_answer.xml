@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              tools:context=".fragments.BrainTrainingFragment"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_alignParentTop="true"
+              android:layout_marginLeft="6dp"
+              android:layout_marginRight="6dp"
+              android:layout_marginTop="6dp"
+              android:background="@color/dialog_background"
+              android:orientation="vertical"
+              android:paddingBottom="20dp">
+
+    <TextView
+            android:id="@+id/titleName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dialog_title"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:text="絵柄の選択"/>
+
+    <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:lineSpacingExtra="6dp"
+            android:textColor="#333333"
+            android:textSize="40sp"
+            android:text="どの絵柄だったでしょうか"/>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+        <ImageView
+                android:id="@+id/dialogImageView1"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"/>
+
+        <ImageView
+                android:id="@+id/dialogImageView2"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+        <ImageView
+                android:id="@+id/dialogImageView3"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"/>
+
+        <ImageView
+                android:id="@+id/dialogImageView4"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"/>
+
+    </LinearLayout>
+
+</LinearLayout>
